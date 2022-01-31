@@ -1,0 +1,25 @@
+﻿<Window x:Class="OdczytZPliku.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OdczytZPliku"
+        mc:Ignorable="d"
+        Title="Odczyt pliku" Height="450" Width="800">
+    <Grid Background="Black">
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Label Foreground="White" FontSize="20">wczytany plik:</Label>
+            <StackPanel Orientation="Horizontal">
+                <TextBox x:Name="TB_NazwaPliku" FontSize="20" IsReadOnly="True" Width="400"></TextBox>
+                <Button FontSize="15" Padding="10" Click="BT_Wczytaj_Click">Wczytaj</Button>
+            </StackPanel>
+            <Label Foreground="White" FontSize="20">Zawartosc pliku:</Label>
+            <TextBox x:Name="TB_ZawrtoscPLiku" FontSize="20" IsReadOnly="True">
+
+            </TextBox>
+
+        </StackPanel>
+        
+
+    </Grid>
+</Window>
